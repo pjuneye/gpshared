@@ -18,7 +18,7 @@
 </head>
 <body>
     <h1>Privacy Policy for Neon AI</h1>
-    <p class="last-updated">Last updated: May 8, 2026</p>
+    <p class="last-updated">Last updated: May 22, 2026</p>
 
     <p>NewPower Technology ("we", "us", or "our") operates the Neon AI mobile application (the "App"), available on iOS and Android. This page informs you of our policies regarding the collection, use, disclosure, sharing, and retention of personal information when you use our App. The same policy applies on both platforms; where a behavior differs by platform, we call it out explicitly.</p>
 
@@ -67,8 +67,8 @@
     <h3>3.2 How we process it</h3>
     <ul>
         <li>The photo is uploaded to our backend servers via HTTPS/TLS.</li>
-        <li>The backend forwards the photo to AI inference providers — a combination of <strong>our own GPU infrastructure</strong> and <strong>third-party AI inference services</strong> we engage to perform image and video generation.</li>
-        <li>The AI providers process the photo only to produce the requested generation result. They do not store the photo beyond the inference window required to return a result, and they are contractually prohibited from using it for training their own models.</li>
+        <li>The backend forwards the photo to our primary AI inference provider, <strong>RunPod, Inc.</strong> (a US-based third-party AI inference service), and in some cases our own GPU infrastructure, to perform image and video generation.</li>
+        <li>RunPod processes the photo only to produce the requested generation result. RunPod does not retain the photo beyond the inference window required to return a result, and is contractually prohibited from using it to train AI models or for any other purpose.</li>
         <li>The generated result is returned to our backend, then to your device.</li>
     </ul>
 
@@ -88,8 +88,19 @@
         <li>We do <strong>not</strong> link your photos to other personal information beyond your account ID for the purpose of delivering the generation result back to you.</li>
     </ul>
 
-    <h3>3.5 Your consent</h3>
-    <p class="platform-note"><em>iOS:</em> The first time you tap "Generate" or upload a photo for AI processing in the App, you will see an in-app "Photo Processing Notice" that summarizes the points above. You must tap "I Agree &amp; Continue" to proceed. If you decline, no photo is uploaded.</p>
+    <h3>3.5 Face Data</h3>
+    <p>The App may process photos that contain facial features as part of its AI effect generation (e.g., hairstyle changes, outfit swaps, artistic style transfers). The following applies specifically to face-related data:</p>
+    <ul>
+        <li><strong>What we collect:</strong> Only the photo you explicitly select and upload. We do not separately extract, derive, or store facial geometry, face embeddings, or biometric face templates from that photo.</li>
+        <li><strong>How we use it:</strong> Face-containing photos are used solely to generate the visual effect you selected. No secondary use of facial features occurs.</li>
+        <li><strong>Third-party sharing:</strong> The photo (which may contain a face) is forwarded to <strong>RunPod, Inc.</strong> (United States) for AI inference only. RunPod does not retain the photo after inference completes and is contractually prohibited from using it for any other purpose, including model training.</li>
+        <li><strong>Where it is stored:</strong> Temporarily on our HTTPS/TLS-encrypted backend servers and on RunPod's inference infrastructure during processing only. Not stored in any other location.</li>
+        <li><strong>Retention:</strong> Automatically deleted within 24 hours of generation completing (see Section 3.3). Deleted immediately upon account deletion (Profile → Delete Account).</li>
+        <li><strong>No biometric processing:</strong> We do not perform facial recognition, identity matching, or build biometric face profiles of any kind. We do not use face data to identify you or any other person.</li>
+    </ul>
+
+    <h3>3.6 Your consent</h3>
+    <p class="platform-note"><em>iOS:</em> The first time you tap "Generate" or upload a photo for AI processing in the App, you will see an in-app "Photo Processing Notice" that identifies RunPod as our AI inference provider and summarizes the points above. You must tap "I Agree &amp; Continue" to proceed. If you decline, no photo is uploaded.</p>
     <p class="platform-note"><em>Android:</em> By using the photo upload features in the App, you acknowledge and agree to the photo handling described in this section. We are working to add an equivalent in-app consent screen on Android in a future release.</p>
 
     <h2>4. Permissions We Request</h2>
@@ -109,7 +120,7 @@
         <li><strong>Apple In-App Purchase &amp; App Store Server APIs</strong> <span class="platform-note">(iOS only)</span> — Processes credit-pack purchases and validates receipts. Subject to <a href="https://www.apple.com/legal/privacy/en-ww/">Apple's Privacy Policy</a>.</li>
         <li><strong>Google Sign-In</strong> <span class="platform-note">(Android only)</span> — Authenticates your account. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
         <li><strong>Google Play Billing</strong> <span class="platform-note">(Android only)</span> — Processes credit-pack purchases. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-        <li><strong>AI Inference Providers</strong> <span class="platform-note">(both platforms)</span> — Third-party services we engage to run AI image/video generation models. They receive only the photo and generation parameters needed to produce the result; they do not retain the data beyond the inference window and are prohibited from using it for training. We may use multiple providers depending on the template; the active providers are subject to change as our infrastructure evolves.</li>
+        <li><strong>RunPod, Inc.</strong> <span class="platform-note">(both platforms)</span> — US-based third-party AI inference service we engage to run image and video generation models. RunPod receives only the photo and generation parameters needed to produce the result; they do not retain the data beyond the inference window and are contractually prohibited from using it for model training or any other purpose. Data is processed in the United States. Subject to <a href="https://www.runpod.io/legal/privacy-policy">RunPod's Privacy Policy</a>.</li>
     </ul>
 
     <h2>7. Data Retention</h2>
