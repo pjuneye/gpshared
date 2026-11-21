@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tressfolio · AI Hairstyle Try-On for Android</title>
+  <meta name="description" content="Compare 24 AI hairstyles on the same selfie with Tressfolio for Android.">
+  <link rel="icon" href="icon.png">
+  <style>
+    :root { color-scheme: light; --paper: #fff9f3; --ink: #36212f; --muted: #65535c; --accent: #78344c; --line: #d9c9ca; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.55 "DM Sans", system-ui, sans-serif; }
+    .page { width: min(76rem, 100%); margin: auto; padding-inline: clamp(1.1rem, 5vw, 4.5rem); }
+    header, footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; }
+    header { padding-block: 1.2rem; border-bottom: 1px solid var(--line); }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; font: bold 1.65rem Georgia, serif; }
+    .brand img { border-radius: .7rem; }
+    main { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: clamp(1.5rem, 4vw, 4rem); padding-block: clamp(2.5rem, 6vw, 5.5rem); }
+    h1 { font: normal clamp(2.7rem, 5.1vw, 5.35rem)/1.04 "DM Serif Text", Georgia, serif; letter-spacing: -.045em; margin: 0 0 1.2rem; text-wrap: balance; }
+    p { max-width: 39ch; color: var(--muted); margin: 0 0 1.1rem; }
+    .lead { font-size: 1.15rem; }
+    .looks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.45rem, 1vw, 1rem); }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; height: auto; border-radius: .55rem; }
+    figcaption { margin-top: .5rem; font-size: .88rem; font-weight: 600; }
+    small { display: block; margin-top: .85rem; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding-block: 1.2rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
+    a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); text-underline-offset: .2em; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    @media (max-width: 48rem) { main { grid-template-columns: 1fr; } p { max-width: 54ch; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <span class="brand"><img src="icon.png" width="44" height="44" alt="">Tressfolio</span>
+      <a href="mailto:support@tresssfolio.ai">Contact support</a>
+    </header>
+    <main>
+      <section aria-labelledby="title">
+        <h1 id="title">Try 24 hairstyles on one selfie.</h1>
+        <p class="lead">See how a different length, fringe or silhouette frames your face with Tressfolio for Android.</p>
+        <p>Choose a look in Explore and select your selfie. Use the same photo for the next style to compare the results. Each generation uses 2 in-app credits.</p>
+        <p>You can use Google to sign in to your Tressfolio account.</p>
+      </section>
+      <section aria-label="Hairstyle examples">
+        <div class="looks">
+          <figure><img src="finger-waves.webp" width="360" height="640" alt="Short hair in sculpted S-shaped waves close to the forehead"><figcaption>Finger waves</figcaption></figure>
+          <figure><img src="halo-afro.webp" width="360" height="640" alt="Full, rounded halo of tightly coiled hair"><figcaption>Halo afro</figcaption></figure>
+          <figure><img src="crown-braid.webp" width="360" height="640" alt="Raised braid wrapped around the crown of the head"><figcaption>Crown braid</figcaption></figure>
+        </div>
+        <small>AI-generated previews using the same portrait.</small>
+      </section>
+    </main>
+    <footer><nav aria-label="Legal and account information">
+      <a href="privacy-policy.html">Privacy policy</a><a href="terms-of-service.html">Terms of service</a><a href="delete-account.html">Delete account</a>
+    </nav><a href="mailto:support@tresssfolio.ai">support@tresssfolio.ai</a></footer>
+  </div>
+</body>
+</html>
